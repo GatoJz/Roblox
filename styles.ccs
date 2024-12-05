@@ -1,11 +1,11 @@
-/* Reset de estilos básicos */
+/* Basic reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales */
+/* General styles */
 body {
     background-color: #3e3e3e;
     font-family: Arial, sans-serif;
@@ -15,7 +15,7 @@ body {
     height: 100vh;
 }
 
-/* Contenedor de la caja de login */
+/* Login box container */
 .login-container {
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@ body {
     height: 100%;
 }
 
-/* Caja de login */
+/* Login box */
 .login-box {
     background-color: #ffffff;
     padding: 40px;
@@ -72,14 +72,14 @@ h2 {
     background-color: #009cbf;
 }
 
-/* Estilos del checkbox "Recordarme" */
+/* Styles for the "Remember me" checkbox */
 .remember-me {
     margin-bottom: 20px;
     text-align: left;
     font-size: 14px;
 }
 
-/* Estilos de los enlaces */
+/* Styles for the links */
 .links {
     font-size: 14px;
 }
