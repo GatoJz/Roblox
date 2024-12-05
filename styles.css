@@ -1,96 +1,140 @@
-/* Basic reset styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General styles */
+/* Body styling */
 body {
-    background-color: #3e3e3e;
     font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header .auth-buttons a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+header .auth-buttons a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Main Login Box */
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-grow: 1;
+    padding: 20px;
 }
 
-/* Login box container */
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-/* Login box */
 .login-box {
-    background-color: #ffffff;
-    padding: 40px;
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
     text-align: center;
 }
 
-h2 {
-    color: #333;
+.login-box h1 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.textbox {
-    margin-bottom: 20px;
-}
-
-.textbox input {
+.login-box input {
     width: 100%;
     padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    color: #333;
-}
-
-.textbox input:focus {
-    border-color: #00b5e2;
-    outline: none;
-}
-
-.btn {
-    width: 100%;
-    background-color: #00b5e2;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
     color: white;
-    padding: 12px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 5px;
+    background-color: #005eff;
+    color: white;
+    font-size: 1rem;
     cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #009cbf;
+.login-box button:hover {
+    background-color: #0041b8;
 }
 
-/* Styles for the "Remember me" checkbox */
-.remember-me {
-    margin-bottom: 20px;
-    text-align: left;
-    font-size: 14px;
-}
-
-/* Styles for the links */
-.links {
-    font-size: 14px;
-}
-
-.links a {
-    color: #00b5e2;
-    text-decoration: none;
+.login-box a {
     display: block;
-    margin-top: 10px;
+    color: #aaa;
+    margin: 10px 0;
+    text-decoration: none;
 }
 
-.links a:hover {
-    text-decoration: underline;
+.login-box a:hover {
+    color: white;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    font-size: 0.8rem;
+    background-color: #111;
+    width: 100%;
+}
+
+footer nav a {
+    color: #aaa;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer nav a:hover {
+    color: white;
+}
+
