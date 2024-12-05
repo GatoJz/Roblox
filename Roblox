@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario - Roblox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-image">
+                <img src="https://www.example.com/imagen-perfil.jpg" alt="Foto de perfil">
+            </div>
+            <div class="profile-info">
+                <h2>Usuario123</h2>
+                <p class="bio">¡Bienvenido a mi perfil de Roblox! Aquí puedes ver mis juegos y actividades.</p>
+                <div class="stats">
+                    <span><strong>Seguidores:</strong> 245</span>
+                    <span><strong>Amigos:</strong> 128</span>
+                    <span><strong>Juegos:</strong> 5</span>
+                </div>
+                <button class="follow-btn">Seguir</button>
+            </div>
+        </div>
+        
+        <div class="profile-content">
+            <h3>Mis Juegos</h3>
+            <div class="games">
+                <div class="game-card">
+                    <img src="https://www.example.com/imagen-juego.jpg" alt="Juego 1">
+                    <h4>Juego 1</h4>
+                </div>
+                <div class="game-card">
+                    <img src="https://www.example.com/imagen-juego.jpg" alt="Juego 2">
+                    <h4>Juego 2</h4>
+                </div>
+                <!-- Puedes agregar más juegos -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
